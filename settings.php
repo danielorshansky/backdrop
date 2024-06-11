@@ -12,7 +12,7 @@
  * advanced database documentation at
  * https://api.backdropcms.org/database-configuration
  */
-$database = 'mysql://user:pass@localhost/database_name';
+$database = 'mysql://root:root@127.0.0.1/themedb';
 $database_prefix = '';
 
 /**
@@ -52,8 +52,8 @@ $database_prefix = '';
  * $config_directories['staging'] = '/home/myusername/config/staging';
  * @endcode
  */
-$config_directories['active'] = 'files/config_' . md5($database) . '/active';
-$config_directories['staging'] = 'files/config_' . md5($database) . '/staging';
+$config_directories['active'] = './files/config_b63a5d416002c402da1887617fee5f28/active';
+$config_directories['staging'] = './files/config_b63a5d416002c402da1887617fee5f28/staging';
 
 /**
  * Skip the configuration staging directory cleanup
@@ -95,7 +95,7 @@ $settings['update_free_access'] = FALSE;
  * @endcode
  *
  */
-$settings['hash_salt'] = '';
+$settings['hash_salt'] = 'XrfmgtWGNZQnCy8EwZFObsaVFIVokm5SaSlKio1PniE';
 
 /**
  * Trusted host configuration (optional but highly recommended).
@@ -540,3 +540,4 @@ $settings['backdrop_drupal_compatibility'] = TRUE;
 if (file_exists(__DIR__ . '/settings.local.php')) {
   include __DIR__ . '/settings.local.php';
 }
+$database_charset = 'utf8mb4';
