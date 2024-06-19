@@ -2,3 +2,6 @@ name = twentytwentyone
 description = twentytwentyone converted from WordPress.
 type = theme
 backdrop = 1.x
+
+stylesheets[all][] = css/style.css
+ckeditor_stylesheets[] = css/style.css

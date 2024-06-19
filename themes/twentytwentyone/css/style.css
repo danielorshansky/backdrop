@@ -1,0 +1,122 @@
+body {
+    font-family:'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+    background-color: #d1e4dd;
+    margin: 0;
+    padding: 0;
+    color: #28303d;
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+h2 {
+    font-size: 2.25rem;
+}
+
+h3 {
+    font-size: 1.875rem;
+}
+
+h4 {
+    font-size: 1.5rem;
+}
+
+h5 {
+    font-size: 1.125rem;
+}
+
+h6 {
+    font-size: 1rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: normal;
+}
+
+h1 strong, h2 strong, h3 strong, h4 strong, h5 strong, h6 strong {
+    font-weight: 600;
+}
+
+.header-menu .links {
+    margin: 0;
+    position: fixed; /* Fix the navbar at the top of the screen */
+    top: 0; /* Position at the top of the screen */
+    right: 0; /* Right-align the navbar */
+    left: 0; /* Full width */
+    display: flex;
+    background-color: black;
+    align-items: center;
+    height: 40px;
+    justify-content: flex-end; /* Distribute space between items */
+    padding: 0 20px; /* Padding around the navbar */
+}
+
+.header-menu .links a {
+    color: white;
+    padding: 10px 15px; /* Padding around the links */
+}
+
+.header-menu .links a:hover {
+    color: cornflowerblue;
+}
+
+/* Style the links inside the navigation bar */
+a {
+    display: inline-block; /* Prevent horizontal stretching */
+    text-decoration: none; /* Remove underline */
+    color: #28303d;
+}
+
+a:hover {
+    border-bottom: 1px dotted black; /* Adjust the color and style as needed */
+}
+
+.js .menu-dropdown a, .js .menu-dropdown a:hover, .js .menu-dropdown a:active, .js .menu-dropdown a:focus {
+    padding-right: 0;
+    margin-right: 58px;
+}
+
+.l-header {
+    margin-top: 50px;
+}
+
+.l-header-inner {
+    display: flex;
+    justify-content: space-between; /* Align items to the start and end of the container */
+    align-items: center; /* Center items vertically */
+    flex-wrap: wrap; /* Ensure items wrap if necessary */
+}
+
+.l-header-inner a {
+    font-weight: normal;
+    font-size: 1.5rem;
+}
+
+.l-header-inner h1 {
+    font-size: 1.5rem;
+}
+
+.js .menu-dropdown a, .js .menu-dropdown a:hover, .js .menu-dropdown a:focus, .js .menu-dropdown a:active {
+    color: #28303d;
+    font-size: 1.25rem;
+}
+
+.block-system-main-menu {
+    margin-left: auto;
+}
+
+.block-hero {
+    margin-bottom: 65px;
+    margin-top: 45px;
+    padding: 0;
+    background: none;
+}
+
+.block-hero h2 {
+    margin: 0;
+    color: #28303d;
+    font-size: 9rem;
+    font-weight: 300;
+    text-align: left;
+}
